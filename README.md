@@ -54,3 +54,17 @@ public class MyEntity {
 
 ## Dependencies
 Make sure your project is set up with Spring Framework and Hibernate, as the library extends their functionality.
+```
+	<repositories>
+		<repository>
+		    <id>jitpack.io</id>
+		    <url>https://jitpack.io</url>
+		</repository>
+	</repositories>
+
+	<dependency>
+	    <groupId>com.github.NikolayNN</groupId>
+	    <artifactId>archived-hibernate-entity</artifactId>
+	    <version>Tag</version>
+	</dependency>
+```
