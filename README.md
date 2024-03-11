@@ -40,15 +40,12 @@ public class MyService {
 }
 ```
 
-4. Mark your entities using the @FilterDef and @Filters annotations to define how the filtering of archived data should be performed.
+4. Implement in your entity ArchivableEntity interface.
 
 ```
-@FilterDef(name="archivedFilter", parameters=@ParamDef(name="isArchived", type="boolean"))
-@Filters({
-        @Filter(name="archivedFilter", condition="archived = :isArchived")
-})
-public class MyEntity {
-    // Your entity
+@Entity
+public class YourEntity implements ArchivableEntity {
+    // Entity fields, including the archived state
 }
 ```
 
